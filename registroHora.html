@@ -8,32 +8,35 @@
 
 </head>
 <body>
-    <div class="contenedor">
-        <h1>Reserva de Hora</h1>
-        <h3>Ingrese sus datos:</h3>
-    </div>
-    <div>
-        <table>
-        <thead>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input type="text" name="nombre" placeholder="Nombre"></td>
-                <td><input type="text" name="nombre" placeholder="Apellidos"></td>
-            </tr>
-            <tr>
-                <td><input type="email" name="correo" placeholder="correo@ejemplo.com"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="edad" placeholder="Número de contacto"></td>
-            </tr>
-                <td><input type="text" name="nombre" placeholder="Nombre de Mascota"></td>            
-            <tr>
-                <td><input type="number" name="edad" min="1" max="100" placeholder="Edad Mascota"></td>
-            </tr>
-        </tbody>
-        </table>
-    </div>
+    <header>
+        <div class="cabecera encabezado">
+            <nav aria-label="navegacion">
+                <ul>
+                <li><a href="home.html">Inicio</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section>
+        <div class="formulario color">
+            <h1>Reserva de Hora</h1>
+            <h3>Ingrese sus datos:</h3>
+            <form id="form-agendar" novalidate>
+            <table>
+
+                <tr><td><input type="text" id="nombre-duenio" placeholder="Nombre"></td>
+                <td><input type="text" id="apellido-duenio" placeholder="Apellidos"></td></tr>
+
+
+                <tr><td><input type="email" id="correo-duenio" placeholder="correo@ejemplo.com"></td>
+
+                <tr><td><input type="text" id="telefono-duenio" placeholder="Número de contacto"></td>
+                <tr><td><input type="text" id="nombre-mascota" placeholder="Nombre de Mascota"></td></tr>            
+                <td><input type="number" id="edad-mascota" min="1" max="100" placeholder="Edad Mascota"></td></tr>
+            </table>
+        </div>
+    </section>
+            </form>
+
 </body>
 
 
