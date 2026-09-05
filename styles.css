@@ -12,6 +12,7 @@ body {
 }
 
 .contenedor {
+    font-family: Helvetica bold;
     width: 400px;
     margin: 50px auto;
     padding: 30px;
@@ -93,6 +94,14 @@ nav a:hover {
 }
 
 .color {
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;  
     background-color: rgb(255,255,255,0.5);
     color: black;
     opacity: 1;
