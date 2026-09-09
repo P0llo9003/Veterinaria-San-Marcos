@@ -1,0 +1,256 @@
+.btnCarrito {
+    background: white;
+    color: #163020;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+.fondoCarrito {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 20;
+}
+
+.fondoCarrito.mostrar {
+    display: block;
+}
+
+.carritoLateral {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 470px;
+    max-width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.carritoLateral.abierto {
+    right: 0;
+}
+
+.tituloCarrito {
+    height: 76px;
+    padding: 0 24px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloCarrito h2 {
+    margin: 0;
+    color: rgb(4, 120, 150);
+    font-size: 20px;
+}
+
+.tituloCarrito button {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: #666;
+}
+
+.listaCarrito {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 24px;
+}
+
+.carritoVacio {
+    color: #777;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.productoCarrito {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.datosProducto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cantidadProducto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.cantidadProducto button {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid #bbb;
+    background: white;
+}
+
+.precioProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+}
+
+.precioProducto button,
+.eliminarPagina {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #a52a2a;
+}
+
+.resumenCarrito {
+    padding: 0 24px;
+}
+
+.filaCarrito {
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.filaCarrito div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filaCarrito small {
+    color: #777;
+    margin-top: 3px;
+}
+
+.totalCarrito {
+    font-size: 17px;
+}
+
+.botonesCarrito {
+    display: flex;
+    gap: 14px;
+    padding: 22px 24px;
+    background: #f3f3f3;
+}
+
+.botonesCarrito button,
+.botonesCarrito a,
+.botonPagoPagina {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border: none;
+    background: rgb(4, 159, 197);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* pagina del carrito */
+
+.paginaCarrito {
+    background-image: none;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.contenidoCarrito {
+    width: 90%;
+    max-width: 1150px;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 35px;
+}
+
+.cabeceraPaginaCarrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.cabeceraPaginaCarrito h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.cabeceraPaginaCarrito a {
+    color: rgb(4, 120, 150);
+}
+
+.productoPagina {
+    background: white;
+    margin-bottom: 12px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productoPagina h3,
+.productoPagina p {
+    margin-top: 0;
+}
+
+.productoPagina p {
+    color: #666;
+}
+
+.eliminarPagina {
+    margin-top: 10px;
+}
+
+.carritoVacioPagina {
+    background: white;
+    padding: 45px 20px;
+    text-align: center;
+    color: #777;
+}
+
+.resumenPaginaCarrito {
+    background: white;
+    padding: 20px;
+    align-self: start;
+}
+
+.resumenPaginaCarrito h2 {
+    margin-top: 0;
+    color: rgb(4, 120, 150);
+    font-size: 19px;
+}
+
+.botonPagoPagina {
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .carritoLateral {
+        width: 100%;
+    }
+
+    .contenidoCarrito {
+        grid-template-columns: 1fr;
+    }
+}

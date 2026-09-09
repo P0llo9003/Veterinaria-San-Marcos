@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrito.css">
+    <script src="carrito.js" defer></script>
+</head>
+<body class="paginaCarrito">
+    <header>
+        <div class="cabecera encabezado">
+            <nav aria-label="navegacion">
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenidoCarrito">
+        <section>
+            <div class="cabeceraPaginaCarrito">
+                <h1>Carro (<span id="cantidadPagina">0</span> items)</h1>
+                <a href="home.html">Seguir comprando</a>
+            </div>
+
+            <div id="productosCarritoPagina"></div>
+        </section>
+
+        <aside class="resumenPaginaCarrito">
+            <h2>Resumen (<span id="resumenCantidad">0</span> productos)</h2>
+
+            <div class="filaCarrito">
+                <div>
+                    <strong>Pago con transferencias</strong>
+                    <small>Transferencia y Banco Estado</small>
+                </div>
+                <strong id="totalTransferenciaPagina">$0</strong>
+            </div>
+
+            <div class="filaCarrito">
+                <div>
+                    <span>Otros medios de pago</span>
+                    <small>Webpay/Onepay</small>
+                </div>
+                <span id="totalOtrosPagina">$0</span>
+            </div>
+
+            <div class="filaCarrito">
+                <strong>Envío</strong>
+                <span>-</span>
+            </div>
+
+            <div class="filaCarrito totalCarrito">
+                <strong>TOTAL</strong>
+                <strong id="totalPagina">$0</strong>
+            </div>
+
+            <button class="botonPagoPagina" onclick="iniciarPago()">Iniciar pago</button>
+        </aside>
+    </main>
+</body>
+</html>
