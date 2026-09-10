@@ -178,6 +178,7 @@ nav a:hover {
   background-color: rgba(4, 159, 197, 0.1);
 }
 
+<<<<<<< HEAD
 /* Productos */
 .seccionProductos {
   width: min(1100px, 90%);
@@ -235,4 +236,19 @@ nav a:hover {
   color: green;
   font-weight: bold;
   margin-top: 10px;
+}
+
+.linkRegistro {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.linkRegistro a {
+    color: rgb(4, 159, 197);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkRegistro a:hover {
+    text-decoration: underline;
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecera encabezado">
+            <nav aria-label="navegacion">
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <form id="form-login" class="formulario color" novalidate>
+            <h1>Iniciar Sesión</h1>
+            <table>
+                <tr>
+                    <td><input type="text" id="usuario" placeholder="Usuario" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="password" placeholder="Contraseña" required></td>
+                </tr>
+            </table>
+
+            <button type="submit">Ingresar</button>
+
+            <p class="linkRegistro">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </form>
+    </section>
+</body>
+</html>
