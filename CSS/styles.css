@@ -90,7 +90,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-
+    padding: 20px 30px;
 }
 
 .color {
@@ -145,4 +145,28 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Tabla de horas agendadas */
+
+#tablaAgendas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+#tablaAgendas th,
+#tablaAgendas td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#tablaAgendas th {
+  background-color: rgb(4, 159, 197);
+  color: white;
+}
+
+#tablaAgendas tbody tr:hover {
+  background-color: rgba(4, 159, 197, 0.1);
 }

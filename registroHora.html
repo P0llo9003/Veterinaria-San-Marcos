@@ -2,44 +2,46 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title> registroHora </title>
+    <title>registroHora</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="JS/funciones.js" defer></script>
-
 </head>
 <body>
     <header>
         <div class="cabecera encabezado">
             <nav aria-label="navegacion">
                 <ul>
-                <li><a href="home.html">Inicio</a></li>
+                    <li><a href="home.html">Inicio</a></li>
                 </ul>
             </nav>
+        </div>
     </header>
+
     <section>
-        <div class="formulario color">
+        <form id="form-agendar" class="formulario color" novalidate>
             <h1>Reserva de Hora</h1>
             <h3>Ingrese sus datos:</h3>
-            <form id="form-agendar" novalidate>
             <table>
-
-                <tr><td><input type="text" id="nombre-duenio" placeholder="Nombre"></td>
-                <td><input type="text" id="apellido-duenio" placeholder="Apellidos"></td></tr>
-
-
-                <tr><td><input type="email" id="correo-duenio" placeholder="correo@ejemplo.com"></td>
-
-                <tr><td><input type="text" id="telefono-duenio" placeholder="Número de contacto"></td>
-                <tr><td><input type="text" id="nombre-mascota" placeholder="Nombre de Mascota"></td></tr>            
-                <td><input type="number" id="edad-mascota" min="1" max="100" placeholder="Edad Mascota"></td></tr>
+                <tr>
+                    <td><input type="text" id="nombre-duenio" placeholder="Nombre" required></td>
+                    <td><input type="text" id="apellido-duenio" placeholder="Apellidos" required></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="correo-duenio" placeholder="correo@ejemplo.com" required></td>
+                    <td><input type="text" id="telefono-duenio" placeholder="Número de contacto" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nombre-mascota" placeholder="Nombre de Mascota" required></td>
+                    <td><input type="number" id="edad-mascota" min="1" max="100" placeholder="Edad Mascota"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="fecha-hora" required></td>
+                    <td><input type="time" id="hora-hora" required></td>
+                </tr>
             </table>
-        </div>
+
+            <button type="submit">Agendar Hora</button>
+        </form>
     </section>
-            </form>
-
 </body>
-
-
-
-
 </html>
