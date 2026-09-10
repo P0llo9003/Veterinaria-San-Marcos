@@ -7,7 +7,7 @@ body {
   background-position: center;
   background-attachment: fixed; 
   min-height: 100vh;
-  margin: auto;
+  margin: 0;
 
 }
 
@@ -95,8 +95,6 @@ nav a:hover {
 
 .color {
     height: auto;
-    width: 60%;
-    margin: 0 auto;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -107,3 +105,14 @@ nav a:hover {
     opacity: 1;
 }
 
+.margen
+  {
+    margin: 10px;
+    width: 60%;
+  }
+
+.margenAuto
+  {
+    margin: 0 auto;
+    width: 100%;
+  }
