@@ -6,6 +6,10 @@ function verHorasAgendadas() {
     window.location.href = "verHoras.html";
 }
 
+function login() {
+    window.location.href = "login.html"
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("form-agendar");

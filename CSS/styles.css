@@ -177,3 +177,18 @@ nav a:hover {
 #tablaAgendas tbody tr:hover {
   background-color: rgba(4, 159, 197, 0.1);
 }
+
+.linkRegistro {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.linkRegistro a {
+    color: rgb(4, 159, 197);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkRegistro a:hover {
+    text-decoration: underline;
+}
