@@ -128,6 +128,68 @@ function iniciarPago() {
     }
 }
 
+function formatoPrecio(valor) {
+    return valor.toLocaleString("es-CL", { style: "currency", currency: "CLP" });
+}
+
+function calcularTotal() {
+    let carrito = obtenerCarrito();
+    let total = 0;
+
+    for (let i = 0; i < carrito.length; i++) {
+        total += carrito[i].precio * carrito[i].cantidad;
+    }
+
+    return total;
+}
+
+function cambiarCantidad(indice, cambio) {
+    let carrito = obtenerCarrito();
+
+    if (carrito[indice] == null) {
+        return;
+    }
+
+    carrito[indice].cantidad += cambio;
+
+    if (carrito[indice].cantidad <= 0) {
+        carrito.splice(indice, 1);
+    }
+
+    guardarCarrito(carrito);
+    actualizarCarrito();
+}
+
+function quitarProducto(indice) {
+    let carrito = obtenerCarrito();
+    carrito.splice(indice, 1);
+    guardarCarrito(carrito);
+    actualizarCarrito();
+}
+
+function actualizarTotales() {
+    let carrito = obtenerCarrito();
+    let cantidadTotal = 0;
+
+    for (let i = 0; i < carrito.length; i++) {
+        cantidadTotal += carrito[i].cantidad;
+    }
+
+    let total = calcularTotal();
+
+    let elCantidadCarrito = document.getElementById("cantidadCarrito");
+    if (elCantidadCarrito != null) elCantidadCarrito.textContent = cantidadTotal;
+
+    let elTotalCarrito = document.getElementById("totalCarrito");
+    if (elTotalCarrito != null) elTotalCarrito.textContent = formatoPrecio(total);
+
+    let elCantidadPagina = document.getElementById("cantidadPagina");
+    if (elCantidadPagina != null) elCantidadPagina.textContent = cantidadTotal;
+
+    let elTotalPagina = document.getElementById("totalPagina");
+    if (elTotalPagina != null) elTotalPagina.textContent = formatoPrecio(total);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     actualizarCarrito();
 });
