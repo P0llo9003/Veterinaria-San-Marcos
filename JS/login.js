@@ -42,6 +42,8 @@ function existeUsuario(nombreUsuario) {
 
 document.addEventListener("DOMContentLoaded", function () {
     inicializarUsuarios();
+    mostrarUsuariosAdmin();
+    mostrarProductosAdmin();
 
     // ----- LOGIN -----
     let formLogin = document.getElementById("form-login");

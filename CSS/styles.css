@@ -178,7 +178,7 @@ nav a:hover {
   background-color: rgba(4, 159, 197, 0.1);
 }
 
-<<<<<<< HEAD
+
 /* Productos */
 .seccionProductos {
   width: min(1100px, 90%);
@@ -238,6 +238,8 @@ nav a:hover {
   margin-top: 10px;
 }
 
+/* Registro */
+
 .linkRegistro {
     margin-top: 15px;
     font-size: 14px;
@@ -251,4 +253,28 @@ nav a:hover {
 
 .linkRegistro a:hover {
     text-decoration: underline;
+}
+
+/* Admin */
+
+#tablaUsuariosAdmin, #tablaProductosAdmin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+#tablaUsuariosAdmin th, #tablaUsuariosAdmin td,
+#tablaProductosAdmin th, #tablaProductosAdmin td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#tablaUsuariosAdmin th, #tablaProductosAdmin th {
+  background-color: rgb(4, 159, 197);
+  color: white;
+}
+
+#tablaUsuariosAdmin tbody tr:hover, #tablaProductosAdmin tbody tr:hover {
+  background-color: rgba(4, 159, 197, 0.1);
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administración</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/admin.js" defer></script>
+    <script src="JS/productos.js" defer></script>
+    <script src="JS/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecera encabezado">
+            <nav aria-label="navegacion">
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="formulario color">
+            <h1>Usuarios Registrados</h1>
+            <table id="tablaUsuariosAdmin">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Rol</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoUsuarios"></tbody>
+            </table>
+        </div>
+
+        <div class="formulario color">
+            <h1>Productos Creados</h1>
+            <table id="tablaProductosAdmin">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoProductosAdmin"></tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
