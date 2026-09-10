@@ -41,8 +41,8 @@ header {
 }
 
 .cabecera {
-  width: min(1100px, 90%);
-  margin: auto;
+  width: min(1200px, 97%);
+  margin: 0 auto;
 }
 
 .encabezado {
@@ -51,6 +51,12 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+
+.logopng {
+  width: auto;
+  height: 70px;
+  display: block;
 }
 
 .btnAgendar {
@@ -66,6 +72,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 18px;
 }
 
