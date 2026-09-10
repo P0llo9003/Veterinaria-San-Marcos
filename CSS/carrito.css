@@ -74,49 +74,6 @@
     margin-top: 30px;
 }
 
-.productoCarrito {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.datosProducto {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.cantidadProducto {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 6px;
-}
-
-.cantidadProducto button {
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    border: 1px solid #bbb;
-    background: white;
-}
-
-.precioProducto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 7px;
-}
-
-.precioProducto button,
-.eliminarPagina {
-    padding: 0;
-    border: none;
-    background: transparent;
-    color: #a52a2a;
-}
 
 .resumenCarrito {
     padding: 0 24px;
